@@ -1,0 +1,15 @@
+[submodule "IITISoC-22-App-5-Mess_QR"]
+	path = IITISoC-22-App-5-Mess_QR
+	url = https://github.com/ishaanmittal-6176/kotlin-learning
+[submodule "InsightAndroid"]
+	path = InsightAndroid
+	url = https://github.com/ishaanmittal-6176/kotlin-learning
+[submodule "TimerOnServiceKotlin"]
+	path = TimerOnServiceKotlin
+	url = https://github.com/ishaanmittal-6176/kotlin-learning
+[submodule "QRCodeScanner"]
+	path = QRCodeScanner
+	url = https://github.com/ishaanmittal-6176/kotlin-learning
+[submodule "PersitentTimerAndroid"]
+	path = PersitentTimerAndroid
+	url = https://github.com/ishaanmittal-6176/kotlin-learning
