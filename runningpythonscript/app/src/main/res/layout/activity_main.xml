@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/input_data"
+        android:layout_width="80sp"
+        android:layout_height="40sp"
+        android:hint="Type Here"
+        android:textSize="10sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/upload_button"
+        android:layout_marginTop="50dp" />
+
+    <Button
+        android:id="@+id/upload_button"
+        android:text="Upload from device"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@id/camara_button"
+        app:layout_constraintStart_toEndOf="@id/input_data"
+        app:layout_constraintTop_toTopOf="@id/input_data"
+        app:layout_constraintBottom_toBottomOf="@id/input_data"/>
+
+    <Button
+        android:id="@+id/camara_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="upload using camara"
+        android:textSize="10sp"
+        app:layout_constraintTop_toTopOf="@id/input_data"
+        app:layout_constraintStart_toEndOf="@id/upload_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/input_data"        />
+
+    <Button
+        android:id="@+id/result_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Solve"
+        app:layout_constraintTop_toBottomOf="@id/input_data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result shows Here"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/result_button"
+        android:layout_marginTop="40dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
